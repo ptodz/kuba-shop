@@ -1,6 +1,6 @@
 package pl.kubashop.web.rest;
 
-import pl.kubashop.KubaShopApp;
+import pl.kubashop.Application;
 import pl.kubashop.domain.User;
 import pl.kubashop.repository.UserRepository;
 import pl.kubashop.service.UserService;
@@ -28,7 +28,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
  * @see UserResource
  */
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = KubaShopApp.class)
+@SpringBootTest(classes = Application.class)
 public class UserResourceIntTest {
 
     @Inject

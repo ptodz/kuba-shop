@@ -24,9 +24,9 @@ import java.util.Collection;
 @ComponentScan
 @EnableAutoConfiguration(exclude = { MetricFilterAutoConfiguration.class, MetricRepositoryAutoConfiguration.class })
 @EnableConfigurationProperties({ JHipsterProperties.class, LiquibaseProperties.class })
-public class KubaShopApp {
+public class Application {
 
-    private static final Logger log = LoggerFactory.getLogger(KubaShopApp.class);
+    private static final Logger log = LoggerFactory.getLogger(Application.class);
 
     @Inject
     private Environment env;
@@ -59,7 +59,7 @@ public class KubaShopApp {
      * @throws UnknownHostException if the local host name could not be resolved into an address
      */
     public static void main(String[] args) throws UnknownHostException {
-        SpringApplication app = new SpringApplication(KubaShopApp.class);
+        SpringApplication app = new SpringApplication(Application.class);
         DefaultProfileUtil.addDefaultProfile(app);
         Environment env = app.run(args).getEnvironment();
         log.info("\n----------------------------------------------------------\n\t" +

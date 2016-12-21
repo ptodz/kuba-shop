@@ -1,6 +1,6 @@
 package pl.kubashop.service;
 
-import pl.kubashop.KubaShopApp;
+import pl.kubashop.Application;
 import pl.kubashop.domain.PersistentToken;
 import pl.kubashop.domain.User;
 import pl.kubashop.repository.PersistentTokenRepository;
@@ -26,7 +26,7 @@ import static org.assertj.core.api.Assertions.*;
  * @see UserService
  */
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = KubaShopApp.class)
+@SpringBootTest(classes = Application.class)
 @Transactional
 public class UserServiceIntTest {
 

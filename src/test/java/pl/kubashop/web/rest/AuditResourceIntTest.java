@@ -1,6 +1,6 @@
 package pl.kubashop.web.rest;
 
-import pl.kubashop.KubaShopApp;
+import pl.kubashop.Application;
 import pl.kubashop.config.audit.AuditEventConverter;
 import pl.kubashop.domain.PersistentAuditEvent;
 import pl.kubashop.repository.PersistenceAuditEventRepository;
@@ -32,7 +32,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
  *
  */
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = KubaShopApp.class)
+@SpringBootTest(classes = Application.class)
 @Transactional
 public class AuditResourceIntTest {
 
