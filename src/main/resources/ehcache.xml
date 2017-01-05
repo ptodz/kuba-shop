@@ -20,5 +20,23 @@
 
     <cache alias="pl.kubashop.domain.User.persistentTokens" uses-template="simple"/>
 
+    <cache alias="pl.kubashop.domain.Category" uses-template="simple"/>
+
+    <cache alias="pl.kubashop.domain.Category.products" uses-template="simple"/>
+
+    <cache alias="pl.kubashop.domain.Product" uses-template="simple"/>
+
+    <cache alias="pl.kubashop.domain.OrderDetails" uses-template="simple"/>
+
+    <cache alias="pl.kubashop.domain.Orders" uses-template="simple"/>
+
+    <cache alias="pl.kubashop.domain.Orders.orderDetails" uses-template="simple"/>
+
+    <cache alias="pl.kubashop.domain.Customer" uses-template="simple"/>
+
+    <cache alias="pl.kubashop.domain.Customer.orders" uses-template="simple"/>
+
+    <cache alias="pl.kubashop.domain.Category.names" uses-template="simple"/>
+
     <!-- jhipster-needle-ehcache-add-entry -->
 </config>

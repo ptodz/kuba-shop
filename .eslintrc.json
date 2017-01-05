@@ -8,7 +8,6 @@
     "browser": true
   },
   "rules": {
-    // coding style
     "wrap-iife": [2, "inside"],
     "eqeqeq": 2,
     "no-use-before-define": [2, "nofunc"],
