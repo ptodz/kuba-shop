@@ -1,0 +1,23 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "orderDetails",
+            "otherEntityName": "orderDetails",
+            "otherEntityRelationshipName": "orders"
+        },
+        {
+            "relationshipName": "customer",
+            "otherEntityName": "customer",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [],
+    "changelogDate": "20161222100947",
+    "entityTableName": "orders",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceClass"
+}
